@@ -1,0 +1,91 @@
+@import 'scss/variables/index.scss';
+
+.pd-about {
+  &-cover {
+    position: relative;
+
+    .content {
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: $pd-color-white;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      padding: 0 15px;
+      position: absolute;
+      width: 100%;
+
+      .heading {
+        color: $pd-color-white;
+      }
+    }
+
+    .img-container {
+      height: 488px;
+      object-fit: contain;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+
+  &-content {
+    text-align: center;
+
+    .heading {
+      color: #1c1b24;
+      letter-spacing: 0;
+      line-height: 50px;
+      margin: 20px 0 80px;
+    }
+
+    .values {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 366px;
+      padding: 0;
+      text-align: left;
+
+      .title {
+        color: #1c1b24;
+        font-size: 22px;
+        letter-spacing: 0;
+        line-height: 32px;
+        margin: 0 0 5px;
+      }
+
+      li {
+        list-style: none;
+
+        &:not(:last-of-type) {
+          margin-bottom: 17px;
+        }
+      }
+    }
+  }
+
+  & .image-container {
+    margin-bottom: 35px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.testimony {
+  text-align: center;
+}
+
+.slick-slider {
+  border-bottom: solid 1px #bdbdbd;
+  margin: 100px 0 50px;
+  padding-bottom: 35px;
+}
+
+@import './media-query';

@@ -1,0 +1,142 @@
+@import 'scss/variables/index.scss';
+
+.pd-products {
+  padding-bottom: 251px;
+
+  &-cover {
+    position: relative;
+
+    .content {
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: $pd-color-white;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      padding: 0 15px;
+      position: absolute;
+      width: 100%;
+
+      .heading {
+        color: $pd-color-white;
+      }
+    }
+
+    .img-container {
+      height: 488px;
+      object-fit: contain;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+
+  .select-box {
+    width: 100%;
+  }
+
+  .banner-container {
+    img {
+      min-height: 160px;
+      object-fit: cover;
+    }
+  }
+
+  &-btn {
+    margin-top: 5rem;
+  }
+
+  &-menu {
+    font-size: 16px;
+    padding: 0;
+    text-transform: uppercase;
+
+    li {
+      cursor: pointer;
+      list-style: none;
+      width: 125px;
+
+      &:first-of-type {
+        margin-top: 50px;
+      }
+
+      &:not(:first-of-type) {
+        margin-top: 31px;
+      }
+
+      &.active {
+        font-weight: 600;
+      }
+    }
+  }
+
+  &-card {
+    background: $pd-color-white;
+    border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    color: $pd-color-black;
+    cursor: pointer;
+    font-size: 18px;
+    height: 236px;
+    line-height: 28px;
+    margin-top: 20px;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    .on-hover {
+      background-image: linear-gradient(180deg, #18519b 0%, #0a2862 100%);
+      border-radius: 6px;
+      color: $pd-color-white;
+      height: 100%;
+      opacity: 0.78;
+      overflow-y: scroll;
+      padding: 20px 24px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 0;
+
+      .title {
+        font-family: 'Ropa Sans', 'FiraSans', sans-serif;
+        font-size: $pd-font-size-md;
+        text-align: left;
+      }
+
+      .description {
+        font-family: 'FiraSans', sans-serif;
+        font-size: $pd-font-size-sm;
+        text-align: left;
+      }
+    }
+
+    .img-container {
+      height: 65%;
+      width: 100%;
+
+      img {
+        border-radius: 5px;
+        height: 100%;
+        object-fit: contain;
+        width: 100%;
+      }
+    }
+
+    .text {
+      margin-top: 11px;
+
+      .title {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@import './media-query';

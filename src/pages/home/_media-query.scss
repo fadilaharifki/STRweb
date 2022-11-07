@@ -1,0 +1,87 @@
+@import 'scss/variables/index';
+
+@media only screen and (max-width: $tablet) {
+  .pd-home {
+    &-shop {
+      img {
+        margin-top: $spacing-lg;
+      }
+    }
+
+    .heading {
+      line-height: 40px;
+    }
+  }
+}
+
+@media only screen and (max-width: $super-tablet) {
+  .heading {
+    font-size: $fs-30 !important;
+  }
+
+  .title {
+    font-size: $pd-font-size-sm;
+    font-weight: bold;
+  }
+
+  .container {
+    padding: 0 15px !important;
+  }
+
+  .pd-home {
+    overflow-x: hidden;
+
+    &-explore {
+      margin: 0 -15px;
+      padding: 75px 15px;
+
+      .explore-items {
+        .item {
+          margin-bottom: 50px;
+        }
+      }
+
+      .ant-btn {
+        margin-top: 30px;
+        width: 100%;
+      }
+    }
+
+    &-benefit {
+      padding: 50px 0 0;
+    }
+
+    &-shop {
+      margin: 0 -15px;
+      padding: 50px 15px;
+
+      .heading {
+        text-align: center;
+        line-height: 40px;
+      }
+
+      .description {
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      .ant-btn {
+        text-align: center;
+        width: 100%;
+      }
+
+      .image {
+        margin-top: 50px;
+      }
+    }
+
+    &-inquiry {
+      margin: 0 -15px;
+      padding: 50px 15px;
+
+      .ant-btn {
+        width: 100%;
+      }
+    }
+  }
+}

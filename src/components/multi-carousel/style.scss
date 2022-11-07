@@ -1,0 +1,26 @@
+@import 'scss/variables/index';
+
+.slick {
+  &-slider {
+    margin: 47px auto !important;
+    width: 85%;
+  }
+
+  &-prev {
+    left: -50px;
+  }
+
+  &-next {
+    right: -50px;
+  }
+
+  &-prev,
+  &-next {
+    &::before {
+      color: $pd-color-darker-gray;
+      font-size: $pd-font-size-lg - 10;
+    }
+  }
+}
+
+@import './media-query';

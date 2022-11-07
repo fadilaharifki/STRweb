@@ -1,0 +1,59 @@
+@import 'scss/variables/index.scss';
+
+.pd-footer {
+  background: $secondary-color;
+  color: $pd-color-white;
+  padding: $spacing-lg;
+
+  &__left {
+    font-size: $pd-font-size-sm;
+    font-weight: bold;
+  }
+
+  .ant-row {
+    margin-bottom: $spacing-lg;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .title {
+    font-family: 'Ropa Sans', 'FiraSans', sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  .list {
+    display: block;
+    padding: 0px;
+
+    li {
+      list-style: none;
+
+      &:not(:last-of-type) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .media {
+    font-size: $pd-font-size-sm;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .privacy-terms-condition {
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-align: right;
+    text-transform: uppercase;
+
+    & .terms-condition {
+      margin-left: $spacing-lg;
+    }
+  }
+}
+
+@import './media-query';

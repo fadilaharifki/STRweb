@@ -1,0 +1,7 @@
+@import 'scss/variables/index';
+
+@media only screen and (max-width: $super-tablet) {
+  .pd-modal-mobile {
+    display: block;
+  }
+}

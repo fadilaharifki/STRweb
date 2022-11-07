@@ -1,0 +1,12 @@
+@import 'scss/variables/index.scss';
+
+.pd-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+
+  .ant-spin {
+    color: $primary-color;
+  }
+}

@@ -1,0 +1,44 @@
+@import 'scss/variables/index';
+
+.pd-modal-mobile {
+  background-color: rgba(28, 27, 36, 0.6);
+  display: none;
+  height: 100%;
+  left: 0;
+  overflow-y: scroll;
+  padding: 81px 16px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  &-card {
+    background-color: $pd-color-white;
+    border-radius: 7px;
+    width: 100%;
+    padding: 16px 16px 40px;
+
+    .close-btn {
+      color: $pd-color-darker-gray;
+      cursor: pointer;
+      display: block;
+      float: right;
+      font-size: 27px;
+      margin-bottom: 20px;
+    }
+
+    .image-container {
+      img {
+        border-radius: 7px;
+        width: 100%;
+      }
+    }
+
+    .heading {
+      text-align: center;
+      margin: 24px 0px 34px;
+    }
+  }
+}
+
+@import './media-query';

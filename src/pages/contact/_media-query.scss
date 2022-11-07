@@ -1,0 +1,11 @@
+@import 'scss/variables/index';
+
+@media only screen and (max-width: $super-tablet) {
+  .pd-contact {
+    padding: 100px 16px;
+
+    .heading {
+      line-height: 40px;
+    }
+  }
+}

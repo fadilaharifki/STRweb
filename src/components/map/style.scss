@@ -1,0 +1,36 @@
+@import 'scss/variables/index.scss';
+
+.map {
+  background-color: $pd-color-light-gray;
+  clear: both;
+  content: '';
+  display: table;
+  padding: 100px 150px;
+  width: 100%;
+
+  .heading {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .image {
+    margin-bottom: 66px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .dash {
+    border-bottom: solid 1px $pd-color-light-gray;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .email,
+  .phone {
+    text-align: right;
+  }
+}
+
+@import './media-query';

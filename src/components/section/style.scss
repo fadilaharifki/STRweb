@@ -1,0 +1,17 @@
+@import 'scss/variables/index.scss';
+
+.pd-section {
+  background-color: $pd-color-light-gray;
+  padding: 100px 165px;
+
+  h1 {
+    color: $primary-color;
+  }
+
+  h3 {
+    font-family: 'FiraSans', sans-serif;
+    color: $secondary-color;
+  }
+}
+
+@import './media-query';

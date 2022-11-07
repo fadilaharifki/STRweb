@@ -1,0 +1,84 @@
+@import 'scss/utils/index';
+@import 'scss/variables/index';
+
+body {
+  font-family: sans-serif;
+}
+
+.font-firasans {
+  font-family: 'FiraSans', sans-serif;
+}
+
+.font-ropasans {
+  font-family: 'Ropa Sans', 'FiraSans', sans-serif;
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.ant-btn {
+  background-color: $pd-color-orange;
+  border: transparent;
+  color: $pd-color-white;
+  height: 100%;
+  padding: $spacing-md $spacing-lg;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $pd-color-orange;
+    border-color: $pd-color-orange;
+    color: $pd-color-white;
+  }
+}
+
+.ant-input {
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $pd-color-orange;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px rgba($pd-color-orange, 0.2);
+  }
+}
+
+.heading {
+  font-family: 'Ropa Sans', 'FiraSans', sans-serif;
+  font-size: $pd-font-size-xl;
+  font-weight: bold;
+  color: $pd-color-black;
+  line-height: 60px;
+}
+
+.title {
+  font-family: 'Ropa Sans', 'FiraSans', sans-serif;
+  font-size: $pd-font-size-md;
+  font-weight: bold;
+}
+
+.description {
+  font-family: 'FiraSans', sans-serif;
+  font-size: 18px;
+
+  &--black {
+    color: $pd-color-black;
+  }
+
+  &--dark-gray {
+    color: $pd-color-dark-gray;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 150px;
+}

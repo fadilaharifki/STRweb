@@ -1,0 +1,17 @@
+@import 'scss/variables/index';
+
+@media only screen and (max-width: $phone) {
+  .map {
+    padding: 50px 15px;
+    text-align: center;
+
+    .phone,
+    .email {
+      text-align: center;
+    }
+
+    .heading {
+      line-height: 40px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import 'scss/variables/index';
+
+@media only screen and (max-width: $super-tablet) {
+  .pd-section {
+    padding: 80px 40px;
+  }
+}
+
+@media only screen and (max-width: $phone) {
+  .pd-section {
+    padding: 60px 15px;
+  }
+
+  .pd-products-menu {
+    display: none;
+  }
+}

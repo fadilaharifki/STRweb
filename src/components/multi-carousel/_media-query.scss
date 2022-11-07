@@ -1,0 +1,19 @@
+@import 'scss/variables/index';
+
+@media only screen and (max-width: $phone) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .slick-slider {
+    margin: 47px auto !important;
+    width: 100%;
+  }
+
+  .slick-prev,
+  .slick-next {
+    &::before {
+      display: none;
+    }
+  }
+}
